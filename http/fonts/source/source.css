@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "SourceSans";
+    src:
+        url("SourceSans3-Regular.otf.woff2") format("woff2"),
+        url("SourceSans3-Regular.otf.woff")  format("woff"),
+        url("SourceSans3-Regular.otf")       format("opentype"),
+        url("SourceSans3-Regular.ttf")       format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSans";
+    src:
+        url("SourceSans3-It.otf.woff2") format("woff2"),
+        url("SourceSans3-It.otf.woff") format("woff"),
+        url("SourceSans3-It.otf") format("opentype"),
+        url("SourceSans3-It.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SourceSans";
+    src:
+        url("SourceSans3-Semibold.otf.woff2") format("woff2"),
+        url("SourceSans3-Semibold.otf.woff")  format("woff"),
+        url("SourceSans3-Semibold.otf")       format("opentype"),
+        url("SourceSans3-Semibold.ttf")       format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSans";
+    src:
+        url("SourceSans3-SemiboldIt.otf.woff2") format("woff2"),
+        url("SourceSans3-SemiboldIt.otf.woff")  format("woff"),
+        url("SourceSans3-SemiboldIt.otf")       format("opentype"),
+        url("SourceSans3-SemiboldIt.ttf")       format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,48 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+    ],
+    "settings": {
+        "ltex.enabled": false,
+        "cSpell.words": [
+            "Atig",
+            "complementation",
+            "coverability",
+            "Czerwiński",
+            "dblp",
+            "DBLP",
+            "Esparza",
+            "Faouzi",
+            "FSTTCS",
+            "Holík",
+            "Hosten",
+            "IARCS",
+            "Lasota",
+            "Linna",
+            "Lukáš",
+            "Luttenberger",
+            "Markwig",
+            "MFCS",
+            "monoid",
+            "monoids",
+            "Munchausen",
+            "Narayan",
+            "pushdown",
+            "Rackoff",
+            "Saivasan",
+            "semiring",
+            "semirings",
+            "Serkan",
+            "Sławomir",
+            "subword",
+            "Thymeleaf",
+            "tropicalization",
+            "Wojciech",
+            "WSTS",
+            "WSTSes",
+            "Zetzsche"
+        ]
+    }
+}

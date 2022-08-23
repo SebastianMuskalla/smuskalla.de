@@ -1,0 +1,877 @@
+/*
+ * general styling
+ */
+
+:root
+{
+    --color-dark: #191919;
+    --color-bright: #F8F8F8;
+    --color-med: #CCC;
+    --color-accent: #391E78;
+}
+
+body
+{
+    font-family: 'SourceSans', sans-serif;
+    color: var(--color-dark);
+
+    /* hide horizontal scrollbar */
+    /* needed for our fix that prevents the scrollbar from moving the content */
+    overflow-x: hidden;
+
+    font-size: 16px;
+}
+
+a, a:active, a:visited
+{
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+/*
+ * misc
+ */
+
+ .buffer
+{
+    /* consume all the space to make sure viewport is filled */
+    flex: 1;
+}
+
+
+/* the main container for everything */
+.container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+
+    /* take at least 100% of viewport height to make sure footer is at the bottom */
+    min-height: 100vh;
+
+
+    /* negative margin to take account for the size of the scrollbar */
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+.email
+{
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+.fake
+{
+    display:none;
+}
+
+/* email icon */
+.email .fa
+{
+    vertical-align: middle;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+
+.accentbox
+{
+    /* border: 0.25em solid var(--color-accent); */
+    background-color: var(--color-med);
+    /* width: fit-content; */
+    padding: 1em;
+}
+
+/*
+ * header
+ */
+
+header
+{
+    width: 100%;
+    background-color: var(--color-dark);
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+header h1, header h2
+{
+    display: block;
+    margin: 0;
+    font-size: clamp(1em,20vw,5em);
+    color: var(--color-bright)
+}
+
+/*
+ * footer
+ */
+
+footer
+{
+    width: 100%;
+    background-color: var(--color-dark);
+    color: var(--color-bright);
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+}
+
+footer a, footer a:active, footer a:visited, footer a:hover
+{
+    color: var(--color-bright);
+}
+
+
+/*
+ * styles for the main page
+ */
+
+/* main part of index */
+.index main
+{
+    width: 100%;
+    background-color: var(--color-bright);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 4em;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* left part of main */
+.avatar
+{
+    display: block;
+
+    /* keep proportions when resizing */
+    max-width: 20em;
+    max-height: 20em;
+    width: auto;
+    height: auto;
+
+    align-self: center;
+
+}
+
+.avatar img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* right part of main */
+.index aside
+{
+    display: block;
+}
+
+/* navigation at the bottom */
+.index nav
+{
+    width: 100%;
+
+    background-color: var(--color-dark);
+    color: var(--color-bright);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.index nav h3
+{
+    display: block;
+    font-size: 2em;
+}
+
+/*
+ * styles for the subpages
+ */
+.sub main
+{
+    width: 100%;
+    position: relative; /* will be used as anchor for the backarrow */
+
+    background-color: var(--color-med);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+
+    padding-top: 0;
+    padding-bottom: 2em;
+}
+
+.contentbox
+{
+    background-color: var(--color-bright);
+    color: var(--color-dark);
+    width: min(90vw,44em);
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+.contentbox h3
+{
+    display: block;
+    text-align: center;
+    font-size: clamp(1em,10vw,2em);
+    margin: 0;
+}
+
+.contentbox h4:first-child
+{
+    margin-top: 0;
+}
+
+.contentbox > ul:last-child,
+.contentbox article p:last-child
+{
+    margin-bottom: 0;
+}
+
+
+/*
+ * arrow for going back to the top of the page
+ */
+
+/* fixed version at the bottom of the page */
+.toparrow-fixed
+{
+    padding-top: 1em;
+
+    /* place arrow at the bottom */
+    display: flex;
+    align-items: flex-end;
+}
+
+.toparrow-fixed a,
+.toparrow-fixed a:visited,
+.toparrow-fixed a:active
+{
+
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: var(--color-dark);
+}
+
+.toparrow-fixed a:hover
+{
+    color: var(--color-accent);
+}
+
+/* floating version */
+.toparrow-floating
+{
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+
+    width: 3em;
+    height: 3em;
+}
+
+.toparrow-floating .fa
+{
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+
+    /* fa-2x */
+    font-size: 2em;
+}
+
+
+.toparrow-floating a,
+.toparrow-floating a:visited,
+.toparrow-floating a:active
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    box-sizing: border-box;
+
+
+    background-color: var(--color-accent);
+    color: var(--color-bright);
+}
+/* hover animation */
+.toparrow-floating a:hover
+{
+    text-decoration: none;
+    background-color: var(--color-bright);
+    border: 0.1em solid var(--color-med);
+    color: var(--color-accent);
+}
+
+/*
+ * linklists
+ * (ul's of links, stylized as buttons)
+ */
+
+.linklist-big
+{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: min(44em, 100vw - 1em);
+}
+
+.linklist-big li
+{
+    margin-bottom: 0.75em;
+}
+
+
+.linklist-big li a,
+.linklist-big li a:visited
+{
+    border-radius: 10px;
+    width: 100%;
+    height: 4em;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--color-bright);
+    color: var(--color-dark);
+}
+
+.linklist-big li a:hover,
+.linklist-big li a:active
+{
+    color: var(--color-bright);
+    background-color: var(--color-accent);
+    text-decoration: none;
+}
+
+.linklist-big li a .fa,
+.linklist-big li a .ai
+{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+
+    /* fa-2x */
+    font-size: 2em;
+}
+
+.linklist-med
+{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: min(20em, 100vw - 1em);
+}
+
+.linklist-med li
+{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.linklist-med li a,
+.linklist-med li a:visited
+{
+    border-radius: 5px;
+    width: 100%;
+    height: 3em;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--color-med);
+    color: var(--color-dark);
+}
+
+.linklist-med li a:hover,
+.linklist-med li a:active
+{
+    color: var(--color-bright);
+    background-color: var(--color-accent);
+    text-decoration: none;
+}
+
+.linklist-med li a .fa,
+.linklist-med li a .ai
+{
+    vertical-align: middle;
+    padding-right: 0.2em;
+    padding-left: 0.1em;
+
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+
+    /* fa-2x */
+    font-size: 2em;
+}
+
+.linklist-small
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.linklist-small li:not(:last-child)
+{
+    margin-bottom: 0.5em;
+}
+
+.linklist-small li a .fa,
+.linklist-small li a .ai
+{
+    /* vertical-align: middle; */
+    padding-right: 0.2em;
+    padding-left: 0.5em;
+
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+
+    /* fa-sm */
+    font-size: .875em;
+    line-height: .07143em;
+    vertical-align: .05357em;
+}
+
+.linklist-small li a,
+.linklist-small li a:visited
+{
+    display: flex;
+    border-radius: 3px;
+    width: 100%;
+    height: 2em;
+    align-items: center;
+    background-color: var(--color-med);
+    color: var(--color-dark);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.linklist-small li a:hover,
+.linklist-small li a:active
+{
+    color: var(--color-bright);
+    background-color: var(--color-accent);
+    text-decoration: none;
+}
+
+.linklist-mini
+{
+    list-style: none;
+    padding: 0;
+    gap: 0.5em;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    /* margin-top: 0.2em; */
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    line-height: 1.75em;
+}
+
+.linklist-mini li
+{
+    display: inline;
+    margin-right: 0.3em;
+    white-space: nowrap;
+}
+
+.linklist-mini li a .fa,
+.linklist-mini li a .ai
+{
+    /* vertical-align: middle; */
+    padding-right: 0.1em;
+    padding-left: 0.2em;
+
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+
+    /* fa-sm */
+    font-size: 0.875em;
+    line-height: 0.07143em;
+    vertical-align: 0.05357em;
+}
+
+.linklist-mini li a,
+.linklist-mini li a:visited
+{
+    /* display: flex; */
+    border-radius: 3px;
+    height: 1em;
+    padding-right: 0.2em;
+    align-items: center;
+    background-color: var(--color-med);
+    color: var(--color-dark);
+}
+
+.linklist-mini li a:hover,
+.linklist-mini li a:active
+{
+    color: var(--color-bright);
+    background-color: var(--color-accent);
+    text-decoration: none;
+}
+
+
+.linklist-dots
+{
+    list-style-type: none;
+    margin-left: 1.5em;
+    padding-left: 0;
+}
+
+.linklist-dots > li
+{
+    position: relative;
+}
+
+.linklist-dots > li > a
+{
+    font-weight: bold;
+}
+
+.linklist-dots > li > a::before
+{
+
+    color: var(--color-dark);
+
+    /* fa-li */
+    position: absolute;
+    left: -2.25em;
+    top: .3em;
+    text-align: left;
+
+    /* fa */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+
+    /* fa-square */
+    content: "\f0c8";
+
+    /* fa-2xs */
+    font-size: .625em;
+}
+
+/*
+ * subpage hamburger navigation
+ */
+
+/* box containing the whole hamburger menu */
+.hamburger-box
+{
+    display: block;
+    width: 100%;
+    position: relative;
+
+    min-height: 5em;
+
+    background-color: var(--color-med);
+    padding-bottom: 1em;
+
+}
+
+/* arrow for going back to the main page */
+.hamburger-box .backarrow
+{
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    left: calc( (100vw - min(90vw,44em)) / 2);
+
+    /* make sure this does not get covered by the nav */
+    z-index: 1;
+}
+
+.hamburger-box .backarrow .fa
+{
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+
+    /* fa-3x */
+    font-size: 3em;
+}
+
+.hamburger-box .backarrow a,
+.hamburger-box .backarrowa:visited,
+.hamburger-box .backarrow a:active
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: var(--color-dark);
+}
+
+.hamburger-box .backarrow a:hover
+{
+    color: var(--color-accent);
+}
+
+/* buttons for opening/closing the menu */
+.hamburger-box .button
+{
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    right: calc( (100vw - min(90vw,44em)) / 2);
+
+    z-index: 1;
+    user-select: none;
+}
+
+.hamburger-box .button .fa
+{
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+
+    /* fa-3x */
+    font-size: 3em;
+}
+
+.hamburger-box .button-close
+{
+    bottom: 1.5em;
+    color: var(--color-bright);
+}
+
+.hamburger-box input
+{
+  display: block;
+  position: absolute;
+  bottom: 1em;
+  right: calc( (100vw - min(90vw,44em)) / 2);
+
+  width: 5em;
+  height: 3em;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+.hamburger-box input:hover ~ .button-open
+{
+    color: var(--color-accent);
+}
+
+/* the container for the actual menu */
+.hamburger-box nav
+{
+    display: block;
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+    user-select: none;
+
+    height:fit-content;
+
+    position: static;
+    width: 100%;
+    background-color: var(--color-dark);
+}
+
+
+/* the actual menu */
+.hamburger-box nav ul
+{
+    display: block;
+    margin: 0 auto;
+    width: min(90vw - 10em, 44em - 14em);
+    padding: 0;
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+
+.hamburger-box nav ul li
+{
+    width: 100%;
+}
+
+.hamburger-box nav ul li:not(:last-child)
+{
+    margin-bottom: 0.5em;
+}
+
+
+.hamburger-box nav ul li .fa
+{
+    /* fa-sm */
+    font-size: .875em;
+    line-height: .07143em;
+    vertical-align: .05357em;
+
+    /* fa-fw */
+    text-align: center;
+    width: 1.25em;
+}
+
+.hamburger-box nav ul li a,
+.hamburger-box nav ul li a:visited,
+.hamburger-box nav ul li a:active
+{
+    display: flex;
+    border-radius: 3px;
+    width: 100%;
+    height: 2em;
+    align-items: center;
+    background-color: var(--color-bright);
+    color: var(--color-dark);
+}
+
+.hamburger-box nav ul li a:hover
+{
+    color: var(--color-bright);
+    background-color: var(--color-accent);
+    text-decoration: none;
+}
+
+.hamburger-box nav ul li a .fa,
+.hamburger-box nav ul li a .ai
+{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+.activepage a
+{
+    background-color: var(--color-med) !important;
+}
+.activepage a:hover
+{
+    color: var(--color-dark) !important;
+}
+
+
+/*
+ * subpage hamburger navigation - toggle logic and animations
+ */
+
+ /* make sure we can hide the nav behind the header */
+header
+{
+    z-index: 1;
+}
+
+/* don't show the menu when the input is unchecked */
+.hamburger-box nav
+{
+    /* hide behind header */
+    z-index: -1;
+    transform-origin: center top;
+    transform: translate(0, -10em);
+
+    /* no height so that it doesn't take space */
+    max-height: 0;
+
+    /* first move behind header, then remove vertical space */
+    transition:
+        transform 0.125s ease-out,
+        max-height 0.125s ease-out 0.15s;
+}
+
+/* show the menu when the input is checked */
+.hamburger-box input:checked ~ nav
+{
+    /* create some vertical space */
+    max-height: 10em;
+
+    /* move back to original position */
+    transform: translate(0, 0);
+
+    /* first create vertical space, then move into visible area */
+
+    transition:
+        max-height 0.125s ease-out,
+        transform 0.125s ease-out 0.15s;
+}
+
+/* show open button only when the input is unchecked */
+.hamburger-box .button-open
+{
+    opacity: 1;
+    transition: opacity 0.125s linear 0.125s;
+}
+
+.hamburger-box input:checked ~ .button-open
+{
+    opacity: 0;
+    transition: none;
+}
+
+/* show close button only when the input is checked */
+.hamburger-box .button-close
+{
+    opacity: 0;
+    transition: none;
+}
+
+.hamburger-box  input:checked ~ .button-close
+{
+    opacity: 1;
+    transition: opacity 0.125s linear 0.25s;
+}
+
+/* recolor and move the backarrow when the menu is open */
+.hamburger-box input:checked ~ .backarrow
+{
+    transform: translate(0, -0.5em);
+    transition: transform 0.125s linear 0.125s;
+}
+
+.hamburger-box input:checked ~ .backarrow a
+{
+    color: var(--color-bright);
+    transition: color 0.125s linear 0.25s;
+}
