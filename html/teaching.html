@@ -1,0 +1,316 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Sebastian Muskalla - Teaching</title>
+
+    <meta name="description" content="Sebastian Muskalla's Webpage">
+    <meta name="author" content="Sebastian Muskalla">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="fonts/source/source.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="fonts/academicons-modified/academicons-modified.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+</head>
+
+<body>
+
+    <div class="container sub">
+
+        <header>
+            <h1>Muskalla</h1>
+            <h2>Sebastian</h2>
+        </header>
+
+        <aside class="hamburger-box">
+            <input type="checkbox">
+            <div class="backarrow" aria-hidden="true">
+                <a href="/#projects">
+                    <span class="fa fa-fw fa-3x fa-arrow-left"></span>
+                </a>
+            </div>
+            <div class="button button-open">
+                <span class="fa fa-fw fa-3x fa-bars"></span>
+            </div>
+            <div class="button button-close">
+                <span class="fa fa-fw fa-3x fa-xmark"></span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="code">
+                            <span class="fa fa-fw fa-sm fa-code" aria-hidden="true"></span>
+                            Code
+                        </a>
+                    </li>
+                    <li class="activepage">
+                        <a href="teaching">
+                            <span class="fa fa-fw fa-sm fa-person-chalkboard" aria-hidden="true"></span>
+                            Teaching
+                        </a>
+                    </li>
+                    <li>
+                        <a href="publications">
+                            <span class="fa fa-fw fa-sm fa-file-pen" aria-hidden="true"></span>
+                            Publications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="photography">
+                            <span class="fa fa-fw fa-sm fa-camera" aria-hidden="true"></span>
+                            Photography
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="buffer">
+
+            <section class="contentbox">
+                <h3><span class="fa fa-fw fa-person-chalkboard" aria-hidden="true"></span> Teaching</h3>
+            </section>
+
+            <section class="contentbox">
+                <p>
+                    Teaching has always been a passion of mine.
+                    As an undergraduate student, I have been a teaching assistant for a lecture that taught basic programming in Java and Haskell.
+                    As a PhD student, I have been a lecturer, organizer, and teaching assistant for lectures on various topics in theoretical computer science.
+                    This includes both undergraduate-level lectures on the basics of theoretical computer science and logic and graduate-level lectures on the theory of automata and games.
+                </p>
+                <p>
+                    You can find some of the material I have created for these lectures below.
+                </p>
+            </section>
+
+            <nav class="contentbox">
+                <h4>Contents</h4>
+
+                <ul class="linklist-dots">
+                    <li>
+                        <a href="#games">Lecture: Games with perfect information</a>
+                    </li>
+                    <li>
+                        <a href="#theoinf2" lang="de">Notizen zu Berechenbarkeits- und Komplexitätstheorie <span lang="en">[in German]</span></a>
+                    </li>
+                    <li>
+                        <a href="#theoinf2videos" lang="de">Videos zu Berechenbarkeits- und Komplexitätstheorie <span lang="en">[in German]</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article lang="de" class="contentbox">
+                <h4 id="games">Lecture: Games with perfect information</h4>
+
+                <p>
+                    In my time as a PhD student at the Technischen Universität Braunschweig, I have conceptualized and held a lecture on <em>games with perfect information</em>.
+                    A game is a system in which several entities, called players, influence the behavior.
+                    Games can be used not only to model real games (video games, board games, ball games, and so on), but they are also useful to model capitalist systems with the players being the participants in a free market.
+                    A game with perfect information is a sequential board game where the players whenever they have to make a choice know the full history, e.g. the previous choices of the other players.
+                    There is no randomness and no hidden information.
+                    Some board games like chess satisfy this definition, but this setting is also important in theoretical computer science to model e.g. verification problems, scheduling problems, and synthesis problems.
+                </p>
+                <p>
+                    Below, you can find the lectures notes for this lecture, which include exercise.
+                    You can also find links to the pages for the lecture at Technische Universität Braunschweig in the summers of 2017 and 2018 with additional information.
+                </p>
+
+                <ul class="linklist-small">
+                    <li>
+                        <a href="documents/teaching/games/games_script_2019-06-03.pdf">
+                            <span class="fa fa-file-pdf"></span> Lecture notes (.pdf)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/documents/lecturenotes/games.pdf">
+                            <span class="fa fa-link"></span> Lecture notes @ TU Braunschweig
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/teaching/Games_SS_2018.html">
+                            <span class="fa fa-link"></span> Games - Summer 2018 @ TU Braunschweig
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/teaching/Games_SS_2017.html">
+                            <span class="fa fa-link"></span> Games - Summer 2017 @ TU Braunschweig
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article lang="de" class="contentbox">
+                <h4 id="theoinf2">Notizen zu Berechenbarkeits- und Komplexitätstheorie <span lang="en">[in German]</span></h4>
+
+                <p>
+                    In meiner Zeit als Doktorrand an der Technischen Universität Braunschweig habe ich im Sommersemester 2017 zusammen mit <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Dr. Roland Meyer</a> die Vorlesung <em>Theoretische Informatik 2</em> gehalten.
+                    In dieser Vorlesung werden zwei wichtige Themengebiete der theoretischen Informatik vermittelt, nämlich zum einen die Berechenbarkeits- und Entscheidbarkeitstheorie und zum anderen die Grundlagen der Komplexitätstheorie.
+                    Es geht also darum, welche Berechnungs- und. Entscheidungsprobleme von Computern gelöst werden können bzw. wie effizient diese Probleme von Computern gelöst werden können.
+                </p>
+                <p>
+                    Ich bin der Hauptautor der Vorlesungsnotizen zu dieser Vorlesung.
+                    Diese Notizen basieren zum Teil auf handschriftlichen Notizen von Prof. Meyer, wurden von mir allerdings substantiell ausgearbeitet.
+                    Einige meiner früheren Arbeitskollegen haben ebenfalls zu diesen Notizen beigetragen.
+                </p>
+
+                <ul class="linklist-small">
+                    <li>
+                        <a href="documents/teaching/theoinf2/theoinf2_script_2022-07-13.pdf">
+                            <span class="fa fa-file-pdf"></span> Vorlesungsnotizen (.pdf)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/documents/lecturenotes/theoinf2.pdf">
+                            <span class="fa fa-link"></span> Vorlesungsnotizen @ TU Braunschweig
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article lang="de" class="contentbox">
+                <h4 id="theoinf2videos">Videos zu Berechenbarkeits- und Komplexitätstheorie <span lang="en">[in German]</span></h4>
+
+                <p>
+                    Während der Coronapandemie habe ich im Sommersemester 2022 zur oben genannten Vorlesung <a href="#theoinf2">Theoretische Informatik 2</a> zusammen mit meinem Peter Chini und <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Dr. Roland Meyer</a> Vorlesungsvideos erstellt.
+                </p>
+                <p>
+                    Im folgenden verlinke ich die von mir erstellen Videos.
+                    Diese sind auf den Servern der Technischen Universität Braunschweig gehostet.
+                    Für das Verständnis ist es empfehlenswert, auch die von meinen Kollegen erstellen Videos zu schauen.
+                    Diese können über den unten angegebenen Link gefunden werden.
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <strong>Unentscheidbarkeit</strong>
+                            <ul>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_4-unentscheidbarkeit_0-intro.mp4">Einleitung</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_4-unentscheidbarkeit_1-kodierung.mp4">Kodierung von Turing-Maschinen</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_4-unentscheidbarkeit_2-utm.mp4">Die universelle Turing-Maschine</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_4-unentscheidbarkeit_3-unentscheidbarkeit-acc.mp4">Unentscheidbarkeit des Akzeptanzproblems</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_4-unentscheidbarkeit_4-reduktionen.mp4">Reduktionen</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Unentscheidbare Probleme kontextfreier Sprachen</strong>
+                            <ul>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_6-unentscheidbare-probleme-cfl.mp4">Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Grundlagen der Komplexitätstheorie</strong>
+                            <ul>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_7-intro-komplexitaet_0-intro.mp4">Einleitung</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_7-intro-komplexitaet_1-landau.mp4">Landau-Notation</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_7-intro-komplexitaet_2-komplexitaetsklassen.mp4">Die Komplexitätsklassen</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_7-intro-komplexitaet_3-relationen">Relationen zwischen den Komplexitätsklassen</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_7-intro-komplexitaet_4-komplementklassen">Komplementklassen</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_8-landkarte-komplexitaetstheorie">Die Landkarte der Komplexitätstheorie</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Die Komplexitätsklasse P</strong>
+                            <ul>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_10-p.mp4">Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Die Komplexitätsklasse NP</strong>
+                            <ul>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_11-np_0-intro.mp4">Einleitung</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_11-np_1-sat.mp4">Die NP-Vollständigkeit des Problems SAT</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_11-np_2-hamiltonian-cycle.mp4">Hamiltonsche Kreise</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_11-np_3-zertifikate.mp4">Zertifikate</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Die Hierarchiesätze</strong>
+                            <ul>
+                                <li>
+                                    <a href="https://www.tcs.cs.tu-bs.de/large/theoinf2_13-hierarchiesaetze.mp4">Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+
+                <ul class="linklist-small">
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/teaching/TheoInf2_SS_2020.html">
+                            <span class="fa fa-link"></span> Theoretische Informatik 2 - Sommer 2020 @ TU Braunschweig
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+
+            <div class="buffer">
+            </div>
+        </main>
+
+        <footer>
+            <a href="impressum">
+                Impressum / Datenschutz
+            </a>
+        </footer>
+
+        <div class="buffer toparrow-floating" aria-hidden="true">
+            <a href="#">
+                <span class="fa fa-fw fa-2x fa-angles-up"></span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
