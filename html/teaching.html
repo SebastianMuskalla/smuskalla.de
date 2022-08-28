@@ -103,7 +103,13 @@
 
                 <ul class="linklist-dots">
                     <li>
-                        <a href="#games">Lecture: Games with perfect information</a>
+                        <a href="#games">Games with perfect information</a>
+                    </li>
+                    <li>
+                        <a href="#fp">Introduction to functional programming</a>
+                    </li>
+                    <li>
+                        <a href="#conctheo">Concurrency theory</a>
                     </li>
                     <li>
                         <a href="#theoinf2" lang="de">Notizen zu Berechenbarkeits- und Komplexitätstheorie <span lang="en">[in German]</span></a>
@@ -114,11 +120,11 @@
                 </ul>
             </nav>
 
-            <article lang="de" class="contentbox">
-                <h4 id="games">Lecture: Games with perfect information</h4>
+            <article class="contentbox">
+                <h4 id="games">Games with perfect information</h4>
 
                 <p>
-                    In my time as a PhD student at the Technischen Universität Braunschweig, I have conceptualized and held a lecture on <em>games with perfect information</em>.
+                    During my time as a PhD student at Technischen Universität Braunschweig, I have conceptualized and held a lecture on <em>games with perfect information</em>.
                     A game is a system in which several entities, called players, influence the behavior.
                     Games can be used not only to model real games (video games, board games, ball games, and so on), but they are also useful to model capitalist systems with the players being the participants in a free market.
                     A game with perfect information is a sequential board game where the players whenever they have to make a choice know the full history, e.g. the previous choices of the other players.
@@ -154,11 +160,71 @@
                 </ul>
             </article>
 
+            <article class="contentbox">
+                <h4 id="fp">Introduction to functional programming</h4>
+
+                <p>
+                    I have given a brief introduction to functional programming in Haskell, focussing on monads.
+                    Originally, this material was presented by me in a series of four talks (~360 minutes) in the context of a lecture on semantics that was given at Technische Universität Braunschweig by <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Roland Meyer</a> and <a href="https://www.tcs.cs.tu-bs.de/group/koslowski/home.html">Jürgen Koslowski</a> in the summer of 2018.
+                </p>
+                <p>
+                    I recently went through the material, reorganized it, and uploaded it to Github.
+                    However, one should not that this is only not the material accompanying the lecture, i.e. it does not contain full lecture notes.
+                </p>
+
+                <ul class="linklist-small">
+                    <li>
+                        <a href="https://github.com/SebastianMuskalla/IntroductionToFunctionalProgramming">
+                            <span class="fa fa-brands fa-github"></span> Lecture material @ Github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/teaching/Semantics_SS_2018.html">
+                            <span class="fa fa-link"></span> Semantics - Summer 2018 @ TU Braunschweig
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="contentbox">
+                <h4 id="conctheo">Concurrency theory</h4>
+
+                <p>
+                    In the winter of 2017/2018, I haven given a lecture on <em>concurrency theory</em> together with my former colleague <a href="https://www.imsc.res.in/prakash_saivasan">Prakash Saivasan</a>.
+                    Concurrency is a subarea of theoretical computer science that studies the theory of concurrent programs, in particular the verification of such programs and automata models that help with this task.
+                    In our lecture, we have focussed on Petri nets, an automata model that is particularly suitable for modelling concurrent systems.
+                    We have also discussed the theory of weak memory models, in particularly the theory of total store ordering, the memory model for the x86 architecture.
+                </p>
+                <p>
+                    Below, you can find the lectures notes for this lecture, which include exercise.
+                    Parts of these lectures notes are based on notes by <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Roland Meyer</a> that were created for an earlier iteration of the lecture.
+                    You can also find links to the pages for the lecture at Technische Universität Braunschweig with additional information.
+                </p>
+
+                <ul class="linklist-small">
+                    <li>
+                        <a href="documents/teaching/conctheo/conctheo_script_2018-12-04.pdf">
+                            <span class="fa fa-file-pdf"></span> Lecture notes (.pdf)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/documents/lecturenotes/conctheo2017.pdf">
+                            <span class="fa fa-link"></span> Lecture notes @ TU Braunschweig
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tcs.cs.tu-bs.de/teaching/ConcurrencyTheory_WS_20172018.html">
+                            <span class="fa fa-link"></span> Concurrency theory - Winter 2017/2018 @ TU Braunschweig
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
             <article lang="de" class="contentbox">
                 <h4 id="theoinf2">Notizen zu Berechenbarkeits- und Komplexitätstheorie <span lang="en">[in German]</span></h4>
 
                 <p>
-                    In meiner Zeit als Doktorrand an der Technischen Universität Braunschweig habe ich im Sommersemester 2017 zusammen mit <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Dr. Roland Meyer</a> die Vorlesung <em>Theoretische Informatik 2</em> gehalten.
+                    In meiner Zeit als Doktorrand an der Technischen Universität Braunschweig habe ich im Sommersemester 2017 zusammen mit <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Roland Meyer</a> die Vorlesung <em>Theoretische Informatik 2</em> gehalten.
                     In dieser Vorlesung werden zwei wichtige Themengebiete der theoretischen Informatik vermittelt, nämlich zum einen die Berechenbarkeits- und Entscheidbarkeitstheorie und zum anderen die Grundlagen der Komplexitätstheorie.
                     Es geht also darum, welche Berechnungs- und. Entscheidungsprobleme von Computern gelöst werden können bzw. wie effizient diese Probleme von Computern gelöst werden können.
                 </p>
@@ -186,7 +252,7 @@
                 <h4 id="theoinf2videos">Videos zu Berechenbarkeits- und Komplexitätstheorie <span lang="en">[in German]</span></h4>
 
                 <p>
-                    Während der Coronapandemie habe ich im Sommersemester 2022 zur oben genannten Vorlesung <a href="#theoinf2">Theoretische Informatik 2</a> zusammen mit meinem Peter Chini und <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Dr. Roland Meyer</a> Vorlesungsvideos erstellt.
+                    Während der Coronapandemie habe ich im Sommersemester 2022 zur oben genannten Vorlesung <a href="#theoinf2">Theoretische Informatik 2</a> zusammen mit  Peter Chini und <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Prof. Roland Meyer</a> Vorlesungsvideos erstellt.
                 </p>
                 <p>
                     Im folgenden verlinke ich die von mir erstellen Videos.
