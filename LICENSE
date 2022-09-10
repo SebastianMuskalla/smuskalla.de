@@ -1,16 +1,29 @@
 LICENSE
 =======
 
-* Academicons is licensed under the SIL OFL 1.1 (see file OFL) (Font) resp. the MIT LICENSE (see file MIT) (Code)
+Included material
+-----------------
+
+* The font "Academicons Modified" is derived from "Academicons" (https://github.com/jpswalsh/academicons) by James Walash (https://github.com/jpswalsh).
+  It extends Academicons with the arXiv logo (https://arxiv.org/), whose usage is permitted by the Brand Use Guidelines (https://arxiv.org/about/brand_use).
+  In accordance with the SIL OPEN FONT LICENSE Version 1.1 under which the font of Academicons is published, Academicons Modified is also published under the  IL OPEN FONT LICENSE Version 1.1.
+  See see file OFL for a copy of the license text.
+  See https://github.com/SebastianMuskalla/muskalla.saarland/tree/main/html/fonts/academicons-modified for the font files.
+
+* normalize.css is licensed under the MIT LICENSE (see file MIT)
+
+* The profile picture is Copyright 2022 strawberrymacaron_art
+All rights reserved
+
+* The rest of this code is Copyright 2022 Sebastian Muskalla
+All rights reserved
+
+
+Dependencies
+------------
 
 * Font Awesome is licensed under the SIL OFL 1.1 (see file OFL) (Font) with the Reserved Font Name "Font Awesome", resp. the MIT LICENSE (see file MIT) (Code)
 
 * Source Sans is licensed under the SIL OFL 1.1 (see file OFL) with the Reserved Font Name "Source"
 
-* normalize.css is licensed under the MIT LICENSE (see file MIT)
-
-* The profile picture is (c) 2022 strawberrymacaron_art
-All rights reserved
-
-* The rest of this code is (c) 2022 Sebastian Muskalla
-All rights reserved
+* Academicons is licensed under the SIL OFL 1.1 (see file OFL) (Font) resp. the MIT LICENSE (see file MIT) (Code)
