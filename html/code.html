@@ -105,6 +105,16 @@
 
                 <ul class="linklist-dots">
                     <li>
+                        <a href="#iexport">iExport</a>
+                        <ul class="linklist-mini">
+                            <li>
+                                <a href="https://github.com/SebastianMuskalla/iExport">
+                                    <span class="fa fa-brands fa-github"></span> Sources
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="#rigg">RIGG</a>
                         <ul class="linklist-mini">
                             <li>
@@ -140,6 +150,50 @@
                 </ul>
             </nav>
 
+
+            <article class="contentbox">
+                <h4 id="iexport">iExport</h4>
+
+                <div class="accentbox">
+                    <em>iExport</em>, 2014-2022
+                    <br>
+                    Gradle project written in Java
+                    <br>
+                    ~10000 lines of code
+                </div>
+
+                <p>
+                    iExport is a tool for parsing and processing the iTunes music library.
+                    It started in 2014 as a fork of the deprecated tool <em>iTunes Export</em> before I eventually rewrote it from scratch in 2016.
+                </p>
+                <p>
+                    iExport parses the iTunes music library based on the property list file <em>iTunes Music Library.xml.</em>
+                    It then allows the user to execute various tasks including
+                    <ul>
+                        <li>printing information about the library,</li>
+                        <li>exporting the iTunes playlists in the form of <em>.m3u</em> files,</li>
+                        <li> exporting the iTunes playlists as folders that contain the tracks as files.</li>
+                    </ul>
+                    The latter two tasks can be used to migrate the iTunes music library to another system.
+                </p>
+                <p>
+                    iExport is written in Java and can be built and run using Gradle.
+                    It provides a command-line interface and is extensively configurable via settings that can be passed in the form of a YAML file.
+                </p>
+                <p>
+                    The source code and more information is available on GitHub.
+                    iExport is free and open-source software, licensed under the GNU General Public License.
+                </p>
+
+                <ul class="linklist-small">
+                    <li>
+                        <a href="https://github.com/SebastianMuskalla/iExport">
+                            <span class="fa fa fa-brands fa-github"></span> Sources @ Github
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
             <article class="contentbox">
                 <h4 id="rigg">RIGG</h4>
 
@@ -158,7 +212,7 @@
                     You can find more information on the paper on my <a href="publications#hmm16">publication page</a>.
                 </p>
                 <p>
-                    RIGG is written in C++ and can be built using cmake.
+                    RIGG is written in C++ and can be built using CMake.
                     The tool provides a command-line interface for solving randomly-generated instances of grammar games and solving them.
                     For the latter task, the tool implements two algorithms.
                 </p>
