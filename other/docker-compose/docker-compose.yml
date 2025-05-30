@@ -1,15 +1,15 @@
 version: "3"
 
 services:
-    muskalla:
-        container_name: muskalla
+    smuskalla_de:
+        container_name: smuskalla_de
         image: nginx
         restart: unless_stopped
         ports:
             - "127.0.0.1:<REDACTED>:80"
         environment:
             - TZ=Europe/Berlin
-            - HOST_NAME=muskalla.saarland
+            - HOST_NAME=smuskalla_de
         volumes:
-            - /<REDACTED>/muskalla/html/:/usr/share/nginx/html
-            - /<REDACTED>/muskalla/conf.d/:/etc/nginx/conf.d
+            - /<REDACTED>/smuskalla_de/html/:/usr/share/nginx/html
+            - /<REDACTED>/smuskalla_de/conf.d/:/etc/nginx/conf.d

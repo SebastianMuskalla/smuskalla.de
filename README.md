@@ -1,7 +1,7 @@
-muskalla.saarland
-=================
+smuskalla.de
+============
 
-<https://muskalla.saarland>
+<https://smuskalla.de>
 
 Deploy instructions
 -------------------
@@ -26,7 +26,7 @@ For the missing dependencies, one has to proceed as follows:
 
 * **Adobe Source Sans**:
   * We will work with the folder `html/fonts/source` that already exists and contains a `.css` file.
-  * Download the latest releases for Adobe Source Sans from <https://github.com/adobe-fonts/source-sans/releases/tag/3.046R>.\
+  * Download the latest releases for Adobe Source Sans from <https://github.com/adobe-fonts/source-sans/releases/tag/3.052R>.\
   You will need the releases containing the OTF, the TTF, the WOFF, and the WOFF2 files.
   * Extract the `.otf` files from the OTF release (subfolder `OTF/`) into the folder `html/fonts/source`.
   * Extract the `.ttf` files from the TTF release into the folder `html/fonts/source`.
@@ -40,18 +40,12 @@ Also see the file [LICENSE](LICENSE)
 
 ### Included material
 
-* The font "Academicons Modified" is derived from "Academicons" (<https://github.com/jpswalsh/academicons>) by James Walash (<https://github.com/jpswalsh>).\
-  It extends Academicons with the arXiv logo (<https://arxiv.org/>), whose usage is permitted by the Brand Use Guidelines (<https://arxiv.org/about/brand_use>).\
-  In accordance with the SIL OPEN FONT LICENSE Version 1.1 under which the font of Academicons is published, Academicons Modified is also published under the  IL OPEN FONT LICENSE Version 1.1.\
-  See see file [OFL](OFL) for a copy of the license text.
-  See the folder `html/fonts/academicons-modified`  for the font files.
-
 * normalize.css is licensed under the [MIT LICENSE](MIT)
 
 * The profile picture is Copyright 2022 strawberrymacaron_art\
 All rights reserved
 
-* The rest of this code is Copyright 2022 Sebastian Muskalla\
+* The rest of this code is Copyright 2022 - 2025 Sebastian Muskalla\
 All rights reserved
 
 
