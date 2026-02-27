@@ -7,7 +7,7 @@
     --color-dark: #191919;
     --color-bright: #F8F8F8;
     --color-med: #CCC;
-    --color-accent: #391E78;
+    --color-accent: #112266;
 }
 
 body
@@ -203,6 +203,12 @@ footer a, footer a:active, footer a:visited, footer a:hover
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+.at
+{
+    padding-left: 0.2em;
+    padding-right: 0.2em;
 }
 
 /* right part of main */
